@@ -1,0 +1,23 @@
+{
+  "name": "EnjoyImageLazy",
+  "version": "0.0.1",
+  "description": "A EnjoyImageLazy for the web",
+  "main": "./src/imageLazy.js",
+  "browser": "./dist/imageLazy.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bravefuture/EnjoyImageLazy.git"
+  },
+  "author": "yongcheng0660@163.com",
+  "license": "",
+  "homepage": "http://github.com/bravefuture/EnjoyImageLazy.git",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>	
+	<img src="src/images/blank.gif" class="img-lazy" data-lazy="src/images/p1.png" width="655" height="927" alt=""/>
+
+	<img src="src/images/blank.gif" class="img-lazy" data-lazy="src/images/p2.png" width="655" height="927" alt=""/>
+
+	<img src="src/images/blank.gif" class="img-lazy" data-lazy="src/images/p3.png" width="655" height="927" alt=""/>
+
+	<div id="clickHover" style="cursor:pointer">显示隐藏的图片</div>
+	<div style="display:none">
+		<img src="src/images/blank.gif" class="img-lazy" data-lazy="src/images/p4.png" width="655" height="927" alt=""/>
+	</div>
+
+	
+	
+	<script src="lib/jquery-3.0.0.min.js"></script>
+	<script src="dist/imageLazy.js"></script>
+	<script>
+	// 实例化
+	var imgLazy = new Enjoy.ImageLazy('.img-lazy', {
+		clickHover: '#clickHover'
+	});
+	// 显示隐藏的图片
+	$('#clickHover').on('click', function() {
+		$(this).next().show();
+	});	
+	</script>
+</body>
+</html>
